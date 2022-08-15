@@ -23,22 +23,39 @@ li {
 }
 
 section {
-  padding: 4em 2em;
+  padding: 4em 10em;
   text-align: center;
 }
 
+::-webkit-scrollbar{
+  width: .75em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3c423a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #20241e;
+  border: #3c423a;
+}
+
 .navbar {
+  height: 12vh;
   display: flex;
-  padding: 1em 2em;
+  padding: 1em 10em;
   align-items: center;
   justify-content: space-between;
-  background-color: #2A3E66;
+  background-color: #293327;
 }
 
 .logo {
-  color: #74936a;
-  font-size: 1em;
-  font-weight: 700;
+  height: 50px;
+  width: 50px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .nav-links {
@@ -48,101 +65,44 @@ section {
 
 .nav-links a {
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 300;
 }
 
 .nav-links a:hover {
-  color: #74936a;
+  color: #85a67e;
   text-decoration: underline;
 }
 
 .hero {
-  background-color: #334C7A;
-  display: flex;
+  padding: 8em 10em;
+  background: linear-gradient(to top right, #3f4f3d, #545c51);
+  height: 103.5vh;
+  text-align: center;
+  justify-content: center;
 }
 
-.hero-left {
-  align-items: center;
-}
-
-.hero-left h1 {
+.hero-container h1 {
   color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 800;
-  margin: .5em 0em;
-}
-
-.hero-left p {
-  color: #A1A1A1;
-  font-size: 1em;
+  font-size: 3em;
   font-weight: 400;
-  padding-top: 1em;
-  padding-bottom: 1rem;
   margin: .5em 0em;
 }
 
-.hero-left button {
-  background-color: #74936a;
-  color: #000000;
-  border: none;
-  padding: .5em 2em;
-  margin: .5em 0em;
-  border-radius: 12px;
-  font-size: 1.2em;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
+.hero-container span {
+  font-weight: 800;
 }
 
-.hero-right img {
-  display: none;
-}
-
-.featured {
-  position: relative;
-}
-
-.featured::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  z-index: -1;
-  background: #73966ed1;
-}
-
-.featured h3 {
-  color: #334C7A;
-  font-size: 0.85em;
-  font-weight: bold;
-  letter-spacing: .2em;
-}
-
-.featured h2 {
-  color: black;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-.featured p {
-  font-size: .9em;
-  line-height: 1.8em;
-  font-weight: 500;
-  color: #464646;
-  margin-top: .75em;
-  margin-bottom: 1.5em;
-}
-
-.featured img{
-  width: 100%;
-  border-radius: 7px;
+.hero-container p {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-top: 2em;
 }
 
 .skills {
-  background: #334C7A;
+  background: #5b6358;
+  z-index: 0;
 }
 
 .icon-container {
@@ -164,7 +124,7 @@ section {
   box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84);
   padding: 2em;
   border-radius: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .skill-title {
@@ -177,18 +137,140 @@ section {
   font-size: .9em;
 }
 
+.skill-left{
+  animation: skills-left-out .5s ease;
+  transform: translate(0%, -20%);
+}
+
+.skill-right{
+  animation: skills-right-out .5s ease;
+  transform: translate(0%, 20%);
+}
+
+.skills:hover .skill-left {
+  animation: skills-left-in .5s ease;
+  transform: translate(0%, 0%);
+}
+
+.skills:hover .skill-right {
+  animation: skills-right-in .5s ease;
+  transform: translate(0%, 0%);
+}
+
+@keyframes skills-left-in {
+  0% {
+    transform: translate(0%, -20%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes skills-right-in {
+  0% {
+    transform: translate(0%, 20%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes skills-left-out {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(0%, -20%);
+  }
+}
+
+@keyframes skills-right-out {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(0%, 20%);
+  }
+}
+
+.languages {
+  background-color: #74936a;
+}
+
+.languages-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language img {
+  height: 150px;
+}
+
 .about-me {
-  background: #74936a;
+  height: 78vh;
+  background: #5b6358;
+  text-align: left;
 }
 
 .about-me h2 {
   margin-bottom: 1em;
   font-weight: bold;
+  color: white;
+}
+
+.about-me p {
+  color: white;
+}
+
+.resume-container {
+  background-color: #5b6358;
+  width: 100%;
+}
+
+.resume-container iframe {
+  width: 50%;
+  height: 110vh;
+  border-radius: .5em;
+}
+
+.resume-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.resume-top h1 {
+  font-size: 2em;
+  color: white;
+  margin-right: 6em;
+}
+
+.resume-top button {
+  padding: 1em 2em;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 1em;
+  border: none;
+  background-color: #74936a;
+  color: white;
+  opacity: .75;
+}
+
+.resume-top a {
+  color: white;
+  text-decoration: none;
+}
+
+.resume-top button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 footer {
   display: flex;
-  padding: 1em 2em;
+  padding: 1.25em 10em;
   justify-content: space-between;
   align-items: center;
 }
@@ -214,42 +296,22 @@ footer img{
 }
 
 footer img:hover {
-  width: 1.25em;
-  height: 1.25em;
+  animation: social .3s ease-in-out;
+}
+
+@keyframes social {
+  0% {
+    width: 1em;
+    height: 1em;
+  }
+
+  100% {
+    width: 1.25em;
+    height: 1.25em;
+  }
 }
 
 @media only screen and (min-width: 800px) {
-  .hero, .featured, .about-me {
-    text-align: left;
-  }
-
-  .hero {
-    display: grid;
-    grid-template-columns: 75% auto;
-  }
-
-  .hero-right img {
-    display: block;
-    width: 12em;
-    height: auto;
-  }
-
-  .featured {
-    display: grid;
-    grid-template-columns: 45% auto;
-  }
-
-  .featured-left {
-    display: grid;
-    place-content: center;
-  }
-
-  .featured img {
-    margin-left: 2em;
-    margin-top: 1em;
-    height: 20em;
-    width: auto;
-  }
 
   .skills {
     margin-top: -6em;
@@ -260,19 +322,5 @@ footer img:hover {
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 1000px){
-  section {
-    padding: 4em 10em;
-  }
-
-  .navbar {
-    padding: 1em 10em;
-  }
-
-  footer {
-    padding: 1em 10em;
   }
 }

@@ -13,58 +13,45 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Graham Pfeifer</div>
+            <div class="logo"><a href="./index.html"><img src="./assets/logo.png" alt="logo"></a></div>
             <div class="menu">
                 <ul class="nav-links">
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Resume</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-left">
-            <h1>I'm Graham Pfeifer, a motivated Computer Science student.</h1>
-            <p>👇 Meet Graham</p>
-            <button class="about-button">About Me</button>
+        <div class="hero-container">
+            <h1>Hi, I'm <span>Graham Pfeifer</span>, a motivated Computer Science student.</h1>
+            <p>👇 My Skills</p>
         </div>
-        <div class="hero-right">
-            <img src="./assets/graham-02.jpg" alt="Photo of Graham Pfeifer">
-        </div>
-    </section>
-    <section class="featured">
-        <div class="featured-left">
-            <h3>FEATURED PROJECT</h3>
-            <h2>Humans of Afghanistan</h2>
-            <p>In this project, I helped my team design a prototype website for a project in an honors class in spring 2022.</p>
-        </div>
-        <img class="featured-right" src="./assets/humans-of-afghanistan.jpg" alt="Humans of Afghanistan homepage">
     </section>
     <section class="skills">
         <div class="skills-container">
             <ul>
-                <li>
+                <li class="skill-left">
                     <div class="icon-container"><img src="./assets/front-end.png" alt="front-end"></div>
                     <p class="skill-title">Front-End Development</p>
                     <p class="skill-desc">Experience designing and creating websites with HTML, CSS, and JavaScript.</p>
                 </li>
-                <li>
+                <li class="skill-right">
                     <div class="icon-container"><img src="./assets/back-end.png" alt="back-end"></div>
                     <p class="skill-title">Back-End Development</p>
                     <p class="skill-desc">Over a year of experience using C++, along with some experience in Python.</p>
                 </li>
-                <li>
-                    <div class="icon-container"><img src="./assets/mobile.png" alt="mobile"></div>
-                    <p class="skill-title">Mobile Development</p>
-                    <p class="skill-desc">Experience designing and creating cross-platform mobile applications in Flutter.</p>
-                </li>
             </ul>
         </div>
     </section>
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>I'm Graham Pfeifer, a second year student at Ohio University studying Computer Science. I am looking for a opportunity as an intern in the technology field for Summer 2023. I have experience in C++, CSS, HTML, Flutter, Python, and JavaScript, creating projects for school as well as side projects. Outside of coding, my interests include sports and music.</p>
+    <section class="languages">
+            <ul class="languages-container">
+                <li><div class="language c++"><img src="./assets/c++.png" alt="c++ logo"></div></li>
+                <li><div class="language css"><img src="./assets/css.png" alt="css logo"></div></li>
+                <li><div class="language html"><img src="./assets/html.png" alt="html logo"></div></li>
+                <li><div class="language python"><img src="./assets/python.png" alt="python logo"></div></li>
+            </ul>
     </section>
     <footer>
         <div class="email">
@@ -72,8 +59,8 @@
         </div>
         <div class="socials">
             <ul class="socials-links">
-                <li><a href="https://www.linkedin.com/in/graham-pfeifer/"><img src="./assets/linkedin.png" alt="linkedin logo"></a></li>
-                <li><a href="https://github.com/grahampfeifer1/"><img src="./assets/github.png" alt="github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/graham-pfeifer/" target="_blank" rel="noreferrer noopener"><img src="./assets/linkedin.png" alt="linkedin logo"></a></li>
+                <li><a href="https://github.com/grahampfeifer1/" target="_blank" rel="noreferrer noopener"><img src="./assets/github.png" alt="github logo"></a></li>
             </ul>
         </div>
     </footer>
