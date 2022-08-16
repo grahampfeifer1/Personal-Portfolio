@@ -211,6 +211,28 @@ section {
   height: 78vh;
   background: #5b6358;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-left {
+  flex: 2;
+}
+
+.about-me-right {
+  flex: 1;
+  margin-left: 3em;
+  height: 50vh;
+  position: relative;
+}
+
+.about-me img {
+  max-height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: .5em;
+  -webkit-box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84); 
+  box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84);
 }
 
 .about-me h2 {
