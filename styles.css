@@ -577,3 +577,47 @@ footer img:hover {
     margin-right: 3em;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  section {
+    padding: 3em 3em;
+  }
+
+  .navbar {
+    padding: 1em 3em;
+  }
+
+  footer {
+    padding: 1em 3em;
+  }
+
+  .hero-container h1 {
+    font-size: 1.75em;
+  }
+  
+  .hero-container p {
+    font-size: 1em;
+    padding-top: 1em;
+  }
+
+  .language img {
+    height: 40px;
+  }
+
+  .project-left button {
+    padding: .75em 1em;
+  }
+
+  .resume-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resume-top button {
+    opacity: 1;
+  }
+}
