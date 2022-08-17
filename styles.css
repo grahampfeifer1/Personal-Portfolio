@@ -592,32 +592,55 @@ footer img:hover {
   }
 
   .hero-container h1 {
-    font-size: 1.75em;
+    font-size: 2.25em;
   }
   
   .hero-container p {
-    font-size: 1em;
+    font-size: 1.25em;
     padding-top: 1em;
   }
 
   .language img {
-    height: 40px;
+    height: 50px;
+  }
+
+  .about-me-left {
+    flex: 1;
+    line-height: 2;
+  }
+
+  .about-me-right {
+    position: relative
+  }
+
+  .about-me-right img {
+    width: 200px;
+    position: absolute;
+    top: 75px;
+    transform: translateX(50%);
   }
 
   .project-left button {
     padding: .75em 1em;
   }
 
-  .resume-top {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  .resume-container iframe {
+    width: 80%;
   }
-
+  
+  .resume-top {
+    margin-bottom: 1.5em;
+  }
+  
+  .resume-top h1 {
+    font-size: 2em;
+    color: white;
+    margin-right: 1em;
+  }
+  
   .resume-top button {
+    padding: .75em 1.5em;
+    font-size: 16px;
     opacity: 1;
   }
 }
