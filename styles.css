@@ -77,7 +77,7 @@ section {
 .hero {
   padding: 8em 10em;
   background: linear-gradient(to top right, #323b31, #6e8566);
-  height: 103.5vh;
+  height: 95vh;
   text-align: center;
   justify-content: center;
 }
@@ -309,7 +309,7 @@ section {
 }
 
 .resume-container iframe {
-  width: 50%;
+  width: 60%;
   height: 110vh;
   border-radius: .5em;
 }
@@ -405,9 +405,9 @@ footer img:hover {
   }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1650px) {
   .about-me-right {
-    height: 30vh;
+    height: 25vh;
     align-items: center;
   }
 }
@@ -571,6 +571,10 @@ footer img:hover {
 
   .project-left button {
     padding: 1em 1.5em;
+  }
+
+  .resume-container iframe {
+    width: 90%;
   }
 
   .resume-top h1 {
