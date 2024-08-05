@@ -216,20 +216,17 @@ section {
 }
 
 .about-me-left {
-  flex: 2;
+  flex: 3;
 }
 
 .about-me-right {
-  flex: 1;
-  margin-left: 3em;
-  height: 50vh;
+  flex: 2;
+  margin-left: 12.5em;
   position: relative;
 }
 
 .about-me img {
-  max-height: 100%;
-  position: absolute;
-  right: 0;
+  width: 15em;
   border-radius: .5em;
   -webkit-box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84); 
   box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84);
@@ -243,6 +240,7 @@ section {
 
 .about-me p {
   color: white;
+  font-size: 17px;
 }
 
 .portfolio {
@@ -301,6 +299,11 @@ section {
 .project-left a {
   text-decoration: none;
   color: white;
+  font-size: 14px;
+}
+
+.project-left img {
+  width: 20em;
 }
 
 .resume-container {
