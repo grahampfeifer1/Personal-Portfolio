@@ -208,25 +208,25 @@ section {
 }
 
 .about-me {
-  height: 78vh;
+  min-height: 78vh; 
   background: #5b6358;
-  text-align: left;
   display: flex;
   justify-content: space-between;
 }
 
 .about-me-left {
-  flex: 3;
+  flex: 1;
+  text-align: left;
 }
 
 .about-me-right {
   flex: 2;
-  margin-left: 12.5em;
-  position: relative;
+  height: 25em;
+  overflow: hidden;
 }
 
 .about-me img {
-  width: 15em;
+  height: 100%;
   border-radius: .5em;
   -webkit-box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84); 
   box-shadow: -5px 10px 13px 0px rgba(15, 15, 15, 0.84);
@@ -410,7 +410,6 @@ footer img:hover {
 
 @media only screen and (max-width: 1650px) {
   .about-me-right {
-    height: 25vh;
     align-items: center;
   }
 }
@@ -510,9 +509,9 @@ footer img:hover {
     margin-right: auto;
   }
   
-  .about-me img {
+  /* .about-me img {
     position: relative;
-  }
+  } */
 
   .portfolio-item {
     flex-direction: column;
@@ -621,7 +620,7 @@ footer img:hover {
   }
 
   .about-me-right img {
-    width: 200px;
+    height: 15vh;
     position: absolute;
     top: 75px;
     transform: translateX(50%);
