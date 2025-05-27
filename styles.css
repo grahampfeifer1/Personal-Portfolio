@@ -25,7 +25,6 @@ li {
 section {
   padding: 4em 10em;
   text-align: center;
-  min-height: 80vh;
 }
 
 ::-webkit-scrollbar{
@@ -247,6 +246,7 @@ section {
 .portfolio {
   background-color: #5b6358;
   color: white;
+  min-height: 80vh;
 }
 
 .portfolio h1 {
